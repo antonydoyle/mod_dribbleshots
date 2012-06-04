@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" method="upgrade" client="site">
+	<name>Dribbble Shots</name>
+	<author>Antony Doyle</author>
+	<creationDate>June 2012</creationDate>
+	<copyright>Copyright Antony Doyle. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 </license>
+	<authorEmail>antony@siege21.com</authorEmail>
+	<authorUrl>www.antonydoyle.co.uk</authorUrl>
+	<version>1.0</version>
+	<description>DRIBBLESHOTSDESC</description>
+    <languages>
+	    	<language tag="en-GB">language/en-GB/en-GB.mod_dribbleshots.ini</language>
+    </languages>
+
+	<files>
+		<filename module="mod_dribbleshots">mod_dribbleshots.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>js</folder>
+		<filename>mod_dribbleshots.xml</filename>
+
+	</files>
+
+		<config>
+			<fields name="params">
+				<fieldset name="options" label="OPTIONS">
+					<field name="username" type="textfield" default="username" label="USERNAME_LBL" description="USERNAME_DESC">
+					</field>
+					<field name="shotcount" type="textfield" default="6" label="SHOTCOUNT_LBL" description="SHOTCOUNT_DESC">
+					</field>
+					<field name="textabove" type="textarea" default="" label="TXT_ABOVE_LBL" description="TXT_ABOVE_DESC">
+					</field>
+					<field name="dribcss" type="radio" default="1" label="CSS_LBL" description="CSS_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+					<field name="jQuery" type="radio" default="1" label="JQUERY_LBL" description="JQUERY_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				</fieldset>
+			</fields>
+	</config>
+</extension>
+

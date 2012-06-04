@@ -1,0 +1,36 @@
+/**
+ *
+ *
+ * @package   mod_dribbleshots
+ * copyright Siege21.com/Antony Doyle
+ * @license GPL3
+ */
+
+#dribbleshots {overflow:hidden; width:100%;}
+#dribbleshots h3 {
+	margin:0px;	
+}
+
+#dribtext {
+	width:100%;
+	clear:both;
+}
+
+.dribbleshot {
+	width:43%;
+	float:left;	
+	margin:15px;
+}
+.dribbleshot img {
+	width:99%;
+	opacity:1;
+	transition: opacity 1s;
+-moz-transition: opacity 1s; /* Firefox 4 */
+-webkit-transition: opacity 1s; /* Safari and Chrome */
+-o-transition: opacity 1s; /* Opera */	
+border:1px #333 solid;
+
+}
+.dribbleshot img:hover {
+	opacity:0.5;
+}
