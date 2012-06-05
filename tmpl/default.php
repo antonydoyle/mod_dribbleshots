@@ -26,10 +26,12 @@ $.jribbble.getShotsByPlayerId(playername, function (playerShots) {
     $('#dribbleshots').html(html.join(''));
 }, {page: 1, per_page: shotcount});
 </script>
-<div id="dribtext">
+<div class="<?php echo $moduleclass_sfx; ?>">
+<div id="dribtext" >
 <p><?php echo $txtAbove; ?></p>
 </div>
 <div id="dribbleshots">
 
 
+</div>
 </div>

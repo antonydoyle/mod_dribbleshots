@@ -13,9 +13,8 @@ $shotCount = $params->get('shotcount');
 $jQuery = $params->get('jQuery'); 
 $dribCss = $params->get('dribcss'); 
 $txtAbove = $params->get('textabove');
-
- // Returns a reference to the global document object - credit to @nternetinspired for this bit (via OneWeb - check it out on GitHub! https://github.com/nternetinspired/OneWeb)
-$doc = JFactory::getDocument();
+ // Returns a reference to the global document object
+$doc 					= JFactory::getDocument();
  
 if ($jQuery) {
   $doc->addCustomTag('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>');
