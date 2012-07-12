@@ -1,36 +1,75 @@
 /**
+
  *
+
  *
+
  * @package   mod_dribbleshots
+
  * copyright Siege21.com/Antony Doyle
+
  * @license GPL3
+
  */
 
-#dribbleshots {overflow:hidden; width:100%;}
+
+
+#dribbleshots {
+	overflow:hidden; 
+	width: 100%;
+	}
+
 #dribbleshots h3 {
 	margin:0px;	
+	font-size:0.8rem;
+	max-width: 20ex; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	white-space: nowrap;
 }
+#dribbleshots h3::after {
+    content: "...";
+} 
+
+
 
 #dribtext {
+
 	width:100%;
+
 	clear:both;
+
 }
 
+
+
 .dribbleshot {
-	width:43%;
+
+	width:120px;
+
 	float:left;	
+
 	margin:15px;
+
 }
+
 .dribbleshot img {
+
 	width:99%;
 	opacity:1;
 	transition: opacity 1s;
--moz-transition: opacity 1s; /* Firefox 4 */
--webkit-transition: opacity 1s; /* Safari and Chrome */
--o-transition: opacity 1s; /* Opera */	
-border:1px #333 solid;
+	-moz-transition: opacity 1s; /* Firefox 4 */
+	-webkit-transition: opacity 1s; /* Safari and Chrome */
+	-o-transition: opacity 1s; /* Opera */	
+	border:1px #333 solid;
+	min-height:95px;
+
 
 }
+
 .dribbleshot img:hover {
+
 	opacity:0.5;
+
 }
